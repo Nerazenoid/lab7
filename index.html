@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var x = prompt("Введите x");
+        uAgent = navigator.userAgent;
+        if(uAgent.indexOf("Firefox")>-1){
+            y = Math.sin(x);
+            alert("y=sin(x)"+"\n" + "y =" + y)
+        }
+        else if(uAgent.indexOf("OPR")>-1){
+            y = 10 * x;
+            alert("y=10*x" +"\n"+"y =" + y)
+        }
+        else if(uAgent.indexOf("Chrome")>-1){
+            y=Math.pow(10,x);
+            alert("y=10^x"+"\n"+"y ="+y)
+        }
+    </script>
+</body>
+</html>
